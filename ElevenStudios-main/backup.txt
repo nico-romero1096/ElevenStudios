@@ -1,3 +1,0 @@
-#F652A0
-
-<img src="img/sonic-generations-banner.png" class="d-block w-100" alt="...">
