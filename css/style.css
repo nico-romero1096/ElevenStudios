@@ -36,6 +36,21 @@ header{
     display:none;
 }
 
+/*.c-item{
+    height: 50vh;
+}
+*/
+/*.c-img{
+    height: 100%;
+    object-fit: cover;
+    object-position: 70% 90%;
+    filter: brightness(0.6);
+}
+*/
+
+.c-img {
+filter: brightness(0.6);
+}
 
 @media (max-width:768px) {
     .header-nav {
@@ -76,7 +91,7 @@ header{
         background: rgba(0, 0, 0, 0.80);
         padding: 10px;
         position: absolute;
-        top: 8px;
+        top: 7px;
         width: 100vw;
         z-index: 10;
     }
@@ -86,4 +101,38 @@ header{
         font-size: 30px;
     }
 
+    .c-item{
+        height: 800px;
+    }
+
+    .c-img {
+        height: 100%;
+        object-fit: cover;
+        object-position: 70% ;
+    }
+}
+
+
+@media (max-width:576px) {
+    .c-item{
+        height: 400px;
+    }
+
+    .c-img {
+        height: 100%;
+        object-fit: cover;
+        object-position: 70% ;
+    }
+}
+
+@media (min-width:992px) {
+    .c-item {
+        height: 700px;
+    }
+
+    .c-img {
+        height: 100%;
+        object-fit: cover;
+        object-position: 0% 90%;
+    }
 }
