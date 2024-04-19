@@ -49,7 +49,6 @@ header{
 
     .header-nav-mobile{
         display: block;
-        margin-bottom: 22px;
         margin-top: -35px;
         margin-right: 2px;
         background-color: initial !important;
@@ -69,26 +68,22 @@ header{
         margin-bottom: 22px;
         margin-top: -80px;
         text-align: right;
-        width: 100%;
+        width: 50%;
+        margin-left: auto;
     }
 
     .navbar-collapse {
-        background: #F652A0;
+        background: rgba(0, 0, 0, 0.80);
         padding: 10px;
         position: absolute;
         top: 8px;
-        left: 1px;
-        width: 100%;
+        width: 100vw;
         z-index: 10;
     }
 
     .nav-link{
-        color: black;
+        color: white;
         font-size: 30px;
     }
 
-    .logo {
-        z-index: 1;
-    }
-    
 }
