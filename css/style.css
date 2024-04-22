@@ -46,23 +46,27 @@ header{
     filter: brightness(0.6);
 }
 
-.community-img {
-    height: 460px;
-    object-fit: cover;
+.title {
+    margin-top: 50px;
+    font-size: 3rem;
+    text-decoration: underline #515151;
+    font-weight: 500;
+    color: white;
+    -webkit-text-stroke: 2px #515151;
 }
 
-.card-img-overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+/*Community banner*/
+
 .community-text {
-    font-size: 60px;
+    margin-top: 100px;
+    font-size: 3rem;
     text-shadow:
     1px 1px 2px black,
-    0 0 1em #F652A0,
-    0 0 0.2em #F652A0;
-    color: #000;
+    0 0 1em #000,
+    0 0 0.2em #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
 }
 
 footer {
@@ -85,6 +89,7 @@ footer {
 }
 
 
+
 .btn-dark {
     width: 20% ;
     font-size: 1.5rem;
@@ -98,6 +103,11 @@ footer {
 
 
 @media (max-width:768px) {
+
+    .title {
+        text-align: center;
+    }
+
 
     /*nav responsive*/
     .header-nav {
@@ -148,17 +158,6 @@ footer {
         font-size: 30px;
     }
 
-    /*carousel img ajust*/
-
-    .c-item{
-        height: 800px;
-    }
-
-    .c-img {
-        height: 100%;
-        object-fit: cover;
-        object-position: 70% ;
-    }
 
     #card {
         margin-bottom: 50px;
@@ -178,29 +177,7 @@ footer {
     .community-text {
         font-size: 30px;
     }
-
-    /*carousel img ajust*/
-    .c-item{
-        height: 400px;
-    }
-
-    .c-img {
-        height: 100%;
-        object-fit: cover;
-        object-position: 70% ;
-    }
 }
 
-@media (min-width:992px) {
-    /*carousel img ajust*/
-    .c-item {
-        height: 700px;
-    }
 
-    .c-img {
-        height: 100%;
-        object-fit: cover;
-        object-position: 0% 90%;
-    }
-}
 
