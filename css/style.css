@@ -5,10 +5,14 @@
     font-family: "Fjalla One", sans-serif;
 
 }
+
+
 header{
     background-color: black;
     max-width: 100vw;
 }
+
+/*nav*/
 .header-nav {
     height: 100%;
 }
@@ -36,23 +40,66 @@ header{
     display:none;
 }
 
-/*.c-item{
-    height: 50vh;
-}
-*/
-/*.c-img{
-    height: 100%;
-    object-fit: cover;
-    object-position: 70% 90%;
-    filter: brightness(0.6);
-}
-*/
 
 .c-img {
-filter: brightness(0.6);
+    width:100%;
+    filter: brightness(0.6);
 }
 
+.community-img {
+    height: 460px;
+    object-fit: cover;
+}
+
+.card-img-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.community-text {
+    font-size: 60px;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em #F652A0,
+    0 0 0.2em #F652A0;
+    color: #000;
+}
+
+footer {
+    background-color: black;
+    max-width: 100vw;
+}
+
+/*Card*/
+
+.news-link {
+    text-decoration: none;
+}
+
+
+
+.news-link:hover {
+    text-decoration:underline ;
+    text-decoration-color: #515151;
+  
+}
+
+
+.btn-dark {
+    width: 20% ;
+    font-size: 1.5rem;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
 @media (max-width:768px) {
+
+    /*nav responsive*/
     .header-nav {
         display: none;
     }
@@ -101,6 +148,8 @@ filter: brightness(0.6);
         font-size: 30px;
     }
 
+    /*carousel img ajust*/
+
     .c-item{
         height: 800px;
     }
@@ -110,10 +159,27 @@ filter: brightness(0.6);
         object-fit: cover;
         object-position: 70% ;
     }
+
+    #card {
+        margin-bottom: 50px;
+    }
+
+    .btn-dark {
+        width: 25%;
+    }
 }
 
 
 @media (max-width:576px) {
+
+    .btn-dark {
+        width: 50%;
+    }
+    .community-text {
+        font-size: 30px;
+    }
+
+    /*carousel img ajust*/
     .c-item{
         height: 400px;
     }
@@ -126,6 +192,7 @@ filter: brightness(0.6);
 }
 
 @media (min-width:992px) {
+    /*carousel img ajust*/
     .c-item {
         height: 700px;
     }
@@ -136,3 +203,4 @@ filter: brightness(0.6);
         object-position: 0% 90%;
     }
 }
+
