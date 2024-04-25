@@ -25,16 +25,16 @@ header{
     height: 100%;
     justify-content: end;
     font-size: 21px;
+    a {
+        text-decoration: none;
+        color: white;
+       
+    }
+    a:hover{
+        color:#F652A0;
+    }
 }
 
-.item a {
-    text-decoration: none;
-    color: white;
-}
-
-.item a:hover{
-    color:#F652A0;
-}
 
 .header-nav-mobile {
     display:none;
@@ -53,25 +53,6 @@ header{
     font-weight: 500;
     color: white;
     -webkit-text-stroke: 2px #515151;
-}
-
-/*Community banner*/
-
-.community-text {
-    margin-top: 100px;
-    font-size: 3rem;
-    text-shadow:
-    1px 1px 2px black,
-    0 0 1em #000,
-    0 0 0.2em #000;
-    color: #fff;
-    text-align: center;
-    text-decoration: underline;
-}
-
-footer {
-    background-color: black;
-    max-width: 100vw;
 }
 
 /*Card*/
@@ -99,6 +80,62 @@ footer {
     text-decoration: none;
     color: #fff;
 }
+
+/*Community banner*/
+
+.community-text {
+    margin-top: 100px;
+    font-size: 3rem;
+    text-shadow:
+    1px 1px 2px black,
+    0 0 1em #000,
+    0 0 0.2em #000;
+    color: #fff;
+    text-align: center;
+    text-decoration: underline;
+}
+/*Footer*/
+footer {
+    background-color: black;
+    max-width: 100vw;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    .title-terms {
+        color: white;
+        font-size: 2rem;
+        text-decoration: underline white;
+        padding-left: 30px;
+        
+    }
+
+    .terms-item {
+        list-style: none;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        a:hover {
+            color: #F652A0;
+        }
+    } 
+
+    .title-social {
+        color: white;
+        font-size: 2rem;
+        text-decoration: underline white;
+    }
+    .social-link img {
+        width: 64px;
+        margin-right: 10px;
+    }
+}    
+
+
+
+
 
 
 
@@ -165,6 +202,22 @@ footer {
 
     .btn-dark {
         width: 25%;
+    }
+    
+    /*Footer*/
+
+    .terms-container-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        .title-terms{
+            padding: 0;
+            text-align: center;
+        }
+        .terms-item a {
+            text-align: center;
+        }
     }
 }
 
