@@ -6,6 +6,9 @@
 
 }
 
+body {
+    background: linear-gradient(90deg, #000018, #011f1f, #0d2134);
+}
 
 header{
     background-color: black;
@@ -31,7 +34,7 @@ header{
        
     }
     a:hover{
-        color:#F652A0;
+        color:#FF0000;
     }
 }
 
@@ -49,10 +52,8 @@ header{
 .title {
     margin-top: 50px;
     font-size: 3rem;
-    text-decoration: underline #515151;
     font-weight: 500;
-    color: white;
-    -webkit-text-stroke: 2px #515151;
+    color: #ffffff;
 }
 
 /*Card*/
@@ -65,13 +66,19 @@ header{
 
 .news-link:hover {
     text-decoration:underline ;
-    text-decoration-color: #515151;
+    text-decoration-color: #000;
+    img {
+        filter: brightness(0.6);
+    }
   
 }
 
+.card-title {
+    text-transform: uppercase;
+}
 
 
-.btn-dark {
+.btn-secondary {
     width: 20% ;
     font-size: 1.5rem;
 }
@@ -100,24 +107,27 @@ footer {
     max-width: 100vw;
     text-transform: uppercase;
     font-weight: 500;
+    
 
     .title-terms {
         color: white;
         font-size: 2rem;
-        padding-left: 30px;
+       
         
     }
 
     .terms-item {
         list-style: none;
         a {
+            display: flex;
+            justify-content: center;
             text-decoration: none;
             color: white;
             font-size: 1.2rem;
         }
 
         a:hover {
-            color: #F652A0;
+            color: #FF0000;
         }
     } 
 
@@ -128,15 +138,18 @@ footer {
     }
     .social-link img {
         width: 64px;
-        margin-right: 10px;
     }
 }    
 
 
 
+    .terms-container{
+        padding-left: 0px;
+    }
 
-
-
+.card {
+    margin-bottom: 20px;
+}
 
 @media (max-width:768px) {
 
@@ -194,18 +207,17 @@ footer {
         font-size: 30px;
     }
 
+    
 
-    #card {
-        margin-bottom: 50px;
+    .card {
+        margin-bottom: 20px;
     }
 
-    .btn-dark {
+    .btn-danger {
         width: 25%;
     }
     
     /*Footer*/
-
-    .socia
 
     .terms-container-mobile {
         display: flex;
@@ -214,18 +226,26 @@ footer {
         
         .title-terms{
             padding: 0;
-            text-align: center;
         }
         .terms-item a {
             text-align: center;
         }
     }
+
+    #logo {
+        margin-bottom: 10px;
+    }
+
 }
 
 
 @media (max-width:576px) {
 
-    .btn-dark {
+    .social-link img {
+        width: 34px;
+    }
+
+    .btn-secondary {
         width: 50%;
     }
     .community-text {
