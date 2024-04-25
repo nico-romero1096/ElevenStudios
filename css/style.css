@@ -75,8 +75,13 @@ header{
 
 .card-title {
     text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
 }
 
+.card {
+    margin-bottom: 35px;
+}
 
 .btn-secondary {
     width: 20% ;
@@ -147,10 +152,6 @@ footer {
         padding-left: 0px;
     }
 
-.card {
-    margin-bottom: 20px;
-}
-
 @media (max-width:768px) {
 
     .title {
@@ -209,9 +210,7 @@ footer {
 
     
 
-    .card {
-        margin-bottom: 20px;
-    }
+ 
 
     .btn-danger {
         width: 25%;
