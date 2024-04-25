@@ -104,7 +104,6 @@ footer {
     .title-terms {
         color: white;
         font-size: 2rem;
-        text-decoration: underline white;
         padding-left: 30px;
         
     }
@@ -125,7 +124,7 @@ footer {
     .title-social {
         color: white;
         font-size: 2rem;
-        text-decoration: underline white;
+    
     }
     .social-link img {
         width: 64px;
@@ -205,6 +204,8 @@ footer {
     }
     
     /*Footer*/
+
+    .socia
 
     .terms-container-mobile {
         display: flex;
