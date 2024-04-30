@@ -35,3 +35,8 @@
     }
 }
 
+@media (max-width:768px) {
+    .btn-dark{
+        width:50%;
+    }
+}

@@ -60,6 +60,9 @@
 
     .company-img{
     width: auto;
+    border-bottom: 10px;
+    border-bottom-color:#000000;
+    border-bottom-style:solid;
   }
 
   .about{
