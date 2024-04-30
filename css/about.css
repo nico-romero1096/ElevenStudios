@@ -2,14 +2,15 @@
 
 .flex-container {
     display: flex;
+    height: 100%;
 
 }
 
 
 
 .company-img{
-    width: 30vw;
-    height: 100vh;
+    width: 30%;
+    height: auto;
     img {
         width: 100%;
         height: 100%;
@@ -20,15 +21,18 @@
     border-right-style:solid;
 }
 
-
+.main {
+    width: 100vw;
+    height: auto;
+}
 
 
 .about {
     display: flex;
     flex-direction: column;
     justify-content: center;    
-    width: 70vw;
-    height: 100vh;
+    width: 70%;
+    height: auto;
     padding: 5px;
     p{
         color: #515151;
@@ -39,6 +43,7 @@
     }
 
     h2 {
+        margin-top: 20px;
         font-size: 4rem;
         text-align: center;
         color: #515151;
@@ -53,15 +58,13 @@
     flex-direction: column;
    }
 
-   .about {
-    width: 100vw;
-    height: 50vh;
-   }
+    .company-img{
+    width: auto;
+  }
 
-   .company-img{
-    width: 100vw;
-    height: 50vh;
-   }
+  .about{
+    width: auto;
+  }
 }
 
 
